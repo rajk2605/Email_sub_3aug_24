@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+   
+    
+    font-family: "Playfair Display", serif;
+}
+
+body {
+  background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: #000000;
+}
+
+.form-container {
+  background: #FAF0E6; /* Lightened for a cleaner look */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border for definition */
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 100px 200px rgba(0, 0, 0, 0.1); 
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); 
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  letter-spacing: 1px;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 50px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.9); /* Matching the container */
+  color: #000000;
+  font-size: 17px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+input::placeholder {
+  color: #000000;
+  
+}
+
+
+input:focus {
+  background: rgba(#808080);
+  outline: none;
+  transform: scale(1.02);
+  border: 2px solid #ff994f;
+  
+
+}
+
+button {
+  width: calc(100% - 20px);
+  padding: 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff7f50; 
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff6347; /* Darker coral on hover */
+  transform: translateY(-2px);
+}
+
+.error {
+  color: #721c24;
+  background-color: #f8d7da;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  margin-top: -5px;
+}
+
+.success {
+  color: #155724;
+  background-color: #d4edda;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    padding: 20px;
+  }
+
+  input, button {
+    width: 100%;
+  }
+}
